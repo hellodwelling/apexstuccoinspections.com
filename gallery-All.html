@@ -1012,6 +1012,27 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9df4479f-8b66-4e92-8415-d6aff4c96a11.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9df4479f-8b66-4e92-8415-d6aff4c96a11.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/> 
@@ -1031,34 +1052,13 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="" /> -->
                             
                         </div>
 
@@ -1184,7 +1184,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9df4479f-8b66-4e92-8415-d6aff4c96a11.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1192,7 +1192,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9df4479f-8b66-4e92-8415-d6aff4c96a11.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1200,7 +1200,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d4983d16-c408-4b0b-82d7-39350484d772.png" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d06947ca-30fe-4cdc-bdb6-51989c5cba18.jpeg" alt="All Photos for Apex Stucco Inspections, LLC in Houston, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1665,46 +1665,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180251"
-                                                    name="180251"
+                                                    id="contact-service-189260"
+                                                    name="189260"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Inspections"
                                             />
-                                            <label for="contact-label-service-180251" class="ml-3 text-sm font-medium text-gray-700">Stucco Inspections</label>
+                                            <label for="contact-label-service-189260" class="ml-3 text-sm font-medium text-gray-700">Stucco Inspections</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180252"
-                                                    name="180252"
+                                                    id="contact-service-189261"
+                                                    name="189261"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Moisture Meter Inspection"
                                             />
-                                            <label for="contact-label-service-180252" class="ml-3 text-sm font-medium text-gray-700">Moisture Meter Inspection</label>
+                                            <label for="contact-label-service-189261" class="ml-3 text-sm font-medium text-gray-700">Moisture Meter Inspection</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180253"
-                                                    name="180253"
+                                                    id="contact-service-189262"
+                                                    name="189262"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Visual Inspection"
                                             />
-                                            <label for="contact-label-service-180253" class="ml-3 text-sm font-medium text-gray-700">Visual Inspection</label>
+                                            <label for="contact-label-service-189262" class="ml-3 text-sm font-medium text-gray-700">Visual Inspection</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180254"
-                                                    name="180254"
+                                                    id="contact-service-189263"
+                                                    name="189263"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Repairs"
                                             />
-                                            <label for="contact-label-service-180254" class="ml-3 text-sm font-medium text-gray-700">Stucco Repairs</label>
+                                            <label for="contact-label-service-189263" class="ml-3 text-sm font-medium text-gray-700">Stucco Repairs</label>
                                         </div>
                                         
                                     </div>
@@ -1735,46 +1735,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180251"
-                                                    name="180251"
+                                                    id="contact-service-189260"
+                                                    name="189260"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Inspections"
                                             />
-                                            <label for="contact-label-service-180251" class="ml-3 text-sm font-medium text-gray-700">Stucco Inspections</label>
+                                            <label for="contact-label-service-189260" class="ml-3 text-sm font-medium text-gray-700">Stucco Inspections</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180252"
-                                                    name="180252"
+                                                    id="contact-service-189261"
+                                                    name="189261"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Moisture Meter Inspection"
                                             />
-                                            <label for="contact-label-service-180252" class="ml-3 text-sm font-medium text-gray-700">Moisture Meter Inspection</label>
+                                            <label for="contact-label-service-189261" class="ml-3 text-sm font-medium text-gray-700">Moisture Meter Inspection</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180253"
-                                                    name="180253"
+                                                    id="contact-service-189262"
+                                                    name="189262"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Visual Inspection"
                                             />
-                                            <label for="contact-label-service-180253" class="ml-3 text-sm font-medium text-gray-700">Visual Inspection</label>
+                                            <label for="contact-label-service-189262" class="ml-3 text-sm font-medium text-gray-700">Visual Inspection</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-180254"
-                                                    name="180254"
+                                                    id="contact-service-189263"
+                                                    name="189263"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Stucco Repairs"
                                             />
-                                            <label for="contact-label-service-180254" class="ml-3 text-sm font-medium text-gray-700">Stucco Repairs</label>
+                                            <label for="contact-label-service-189263" class="ml-3 text-sm font-medium text-gray-700">Stucco Repairs</label>
                                         </div>
                                         
                                     </div>
